@@ -1,6 +1,6 @@
 {
   "name": "ngx-debounce-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Doing something after some delay of user's input",
   "author": {
     "name": "Odilbek Utamuratov",
