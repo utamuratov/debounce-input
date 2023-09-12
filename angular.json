@@ -93,6 +93,42 @@
           }
         }
       }
+    },
+    "ngx-debounce-input": {
+      "projectType": "library",
+      "root": "projects/ngx-debounce-input",
+      "sourceRoot": "projects/ngx-debounce-input/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-debounce-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-debounce-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-debounce-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-debounce-input/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "ccb5e575-bfc5-4711-90ef-ae47eca8e7fb"
   }
 }
