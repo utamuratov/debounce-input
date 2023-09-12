@@ -1,9 +1,28 @@
 {
   "name": "ngx-debounce-input",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Doing something after some delay of user's input",
+  "author": {
+    "name": "Odilbek Utamuratov",
+    "email": "odil.utamuratov@gmail.com",
+    "url": "https://medium.com/@odil.utamuratov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/utamuratov/debounce-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/utamuratov/debounce-input/issues",
+    "email": "odil.utamuratov@gmail.com"
+  },
+  "homepage": "https://stackblitz.com/edit/stackblitz-starters-mkgg2r?file=src%2Fapp%2Fapp.component.ts",
+  "keywords": [
+    "angular",
+    "debounce-input"
+  ],
   "peerDependencies": {
-    "@angular/common": "^9.0.0",
-    "@angular/core": "^9.0.0"
+    "@angular/common": ">=9.0.0",
+    "@angular/core": ">=9.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
