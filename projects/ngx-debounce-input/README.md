@@ -1,24 +1,36 @@
 # NgxDebounceInput
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+[DEMO](https://stackblitz.com/edit/stackblitz-starters-mkgg2r?file=src%2Fapp%2Fapp.component.ts)
 
-## Code scaffolding
+# Installation
 
-Run `ng generate component component-name --project ngx-debounce-input` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-debounce-input`.
-> Note: Don't forget to add `--project ngx-debounce-input` or else it will be added to the default project in your `angular.json` file. 
+Use this following command to install:
 
-## Build
+```bash
+npm i ngx-debounce-input
+```
 
-Run `ng build ngx-debounce-input` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Usage
 
-## Publishing
+```
+import { NgxDebounceInputModule } from 'ngx-debounce-input';
 
-After building your library with `ng build ngx-debounce-input`, go to the dist folder `cd dist/ngx-debounce-input` and run `npm publish`.
+@NgModule({
+  ...,
+  imports: [NgxDebounceInputModule],
+})
+export class FeatureModule {}
+```
 
-## Running unit tests
+If Your Angular version is higher than 14 You can also import `NgxDebounceInputModule` to your standalone component.
 
-Run `ng test ngx-debounce-input` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Using
 
-## Further help
+`HTML` template:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+<!-- delay 1s after user's input (default) -->
+<input ngxDebounceInput (search)="doSmth($event)" />
+<!-- delay 2s after user's input -->
+<input ngxDebounceInput [debounceTime]="2000" (search)="doSmth($event)" />
+```
