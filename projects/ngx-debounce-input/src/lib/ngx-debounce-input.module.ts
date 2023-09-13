@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { DebounceInputDirective } from './debounce-input.directive';
+import { NgxDebounceInputDirective } from './debounce-input.directive';
 
 @NgModule({
-  declarations: [DebounceInputDirective],
-  exports: [DebounceInputDirective],
+  imports: [NgxDebounceInputDirective],
+  exports: [NgxDebounceInputDirective],
 })
 export class NgxDebounceInputModule {}

@@ -10,8 +10,9 @@ import { debounceTime, fromEvent } from 'rxjs';
 
 @Directive({
   selector: '[ngxDebounceInput]',
+  standalone: true,
 })
-export class DebounceInputDirective implements AfterViewInit {
+export class NgxDebounceInputDirective implements AfterViewInit {
   /**
    *
    */

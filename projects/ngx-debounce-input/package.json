@@ -1,6 +1,6 @@
 {
   "name": "ngx-debounce-input",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "Doing something after some delay of user's input",
   "author": {
     "name": "Odilbek Utamuratov",
@@ -21,8 +21,8 @@
     "debounce-input"
   ],
   "peerDependencies": {
-    "@angular/common": ">=9.0.0",
-    "@angular/core": ">=9.0.0"
+    "@angular/common": ">=16.0.0",
+    "@angular/core": ">=16.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

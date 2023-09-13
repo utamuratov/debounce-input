@@ -13,16 +13,16 @@ npm i ngx-debounce-input
 # Usage
 
 ```
-import { NgxDebounceInputModule } from 'ngx-debounce-input';
+import { NgxDebounceInputDirective } from 'ngx-debounce-input';
 
 @NgModule({
   ...,
-  imports: [NgxDebounceInputModule],
+  imports: [NgxDebounceInputDirective], // Or import NgxDebounceInputModule
 })
 export class FeatureModule {}
 ```
 
-If Your Angular version is higher than 14 You can also import `NgxDebounceInputModule` to your standalone component.
+\*\*Your Angular version should be >= 16.
 
 # Using
 
